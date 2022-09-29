@@ -5,7 +5,6 @@ function xify(str){
         newStr += "x";
     }
     return newStr;
-
 }
 console.log(xify("hello"));
 console.log(xify("hi there"));
@@ -16,12 +15,10 @@ console.log(xify("hi there"));
 function yellingChars(str){
     let newStr = "";
     for(let i = 0; i < str.length; i++){
-        newStr += str[i] //adding back character from origiinal string
-        newStr += "!" //will add ! after each character // loop will reapeat this action 1 by 1
-        //another way to write the above is newStr += str[i] + "!";
+        newStr += str[i];
+        newStr += "!";
     }
     return newStr;
-
 }
 console.log(yellingChars("goodness"));
 console.log(yellingChars("oh hello"));
@@ -49,10 +46,10 @@ function exclaim(str){
         if(str[i] === "?" || str[i] === "."){
             newStr += "!";
         }else{
-            newStr += str[i]
+            newStr += str[i];
         }
     } 
-    return newStr
+    return newStr;
 }
 console.log(exclaim("What are you doing? Are you a fool?"));
 console.log(exclaim("This is fine."));
@@ -67,14 +64,14 @@ function truncate(str){
     }
     return newStr + "...";
 }
-console.log(truncate("The fault, dear Brutus, is not in our stars, but in ourselves."))
-console.log(truncate("Well, that's just, like, your opinion man."))
+console.log(truncate("The fault, dear Brutus, is not in our stars, but in ourselves."));
+console.log(truncate("Well, that's just, like, your opinion man."));
 */
 
 
 /*
 function ciEmailify(str){
-    let newStr = ""
+    let newStr = "";
     for(let i = 0; i < str.length; i++){
         if(str[i] === " "){
             newStr += ".";
@@ -108,10 +105,10 @@ function onlyVowels(str){
     let newStr = "";
     for(let i = 0; i < str.length; i++){
         if(str[i].toLowerCase() === "a" || str[i].toLowerCase() === "e" || str[i].toLowerCase() === "i" || str[i].toLowerCase() === "o" || str[i].toLowerCase() === "u"){
-            newStr += str[i]
+            newStr += str[i];
         }
     }
-    return newStr
+    return newStr;
 }
 console.log(onlyVowels("Colin Jaffe"));
 console.log(onlyVowels("quickly"));
